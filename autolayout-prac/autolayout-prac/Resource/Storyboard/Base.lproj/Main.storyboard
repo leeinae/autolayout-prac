@@ -175,17 +175,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="내 마니또 누군지 정말 궁금" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTb-FB-w3g">
+                                <rect key="frame" x="40" y="212.66666666666666" width="257" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATN-ce-WJJ">
+                                <rect key="frame" x="317" y="212.66666666666666" width="57" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="76L-eB-ZO6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7tu-LO-04Z" firstAttribute="top" secondItem="76L-eB-ZO6" secondAttribute="top" constant="40" id="2yC-Bf-7Iw"/>
                             <constraint firstItem="76L-eB-ZO6" firstAttribute="trailing" secondItem="tuh-6L-vfq" secondAttribute="trailing" constant="40" id="4bT-Bf-0zw"/>
+                            <constraint firstItem="ATN-ce-WJJ" firstAttribute="top" secondItem="zTb-FB-w3g" secondAttribute="top" id="Ggv-4h-YhD"/>
                             <constraint firstItem="Kfm-pN-iNR" firstAttribute="leading" secondItem="7tu-LO-04Z" secondAttribute="trailing" constant="40" id="QJe-kN-ShR"/>
                             <constraint firstItem="tuh-6L-vfq" firstAttribute="leading" secondItem="Kfm-pN-iNR" secondAttribute="trailing" constant="40" id="XhP-3y-aw1"/>
+                            <constraint firstItem="zTb-FB-w3g" firstAttribute="leading" secondItem="7tu-LO-04Z" secondAttribute="leading" id="i4f-pb-IJH"/>
                             <constraint firstItem="Kfm-pN-iNR" firstAttribute="top" secondItem="7tu-LO-04Z" secondAttribute="top" id="jfZ-vx-ov8"/>
+                            <constraint firstItem="ATN-ce-WJJ" firstAttribute="trailing" secondItem="tuh-6L-vfq" secondAttribute="trailing" id="mTq-BJ-H56"/>
                             <constraint firstItem="7tu-LO-04Z" firstAttribute="leading" secondItem="76L-eB-ZO6" secondAttribute="leading" constant="40" id="plq-AY-h2n"/>
+                            <constraint firstItem="zTb-FB-w3g" firstAttribute="top" secondItem="7tu-LO-04Z" secondAttribute="bottom" constant="100" id="tWJ-fi-lHZ"/>
                             <constraint firstItem="tuh-6L-vfq" firstAttribute="top" secondItem="Kfm-pN-iNR" secondAttribute="top" id="uAz-ME-5TL"/>
+                            <constraint firstItem="ATN-ce-WJJ" firstAttribute="leading" secondItem="zTb-FB-w3g" secondAttribute="trailing" constant="20" id="wSU-nw-gpP"/>
                         </constraints>
                     </view>
                 </viewController>
