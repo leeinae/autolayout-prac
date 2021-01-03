@@ -149,6 +149,50 @@
             </objects>
             <point key="canvasLocation" x="1536" y="9"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="MJF-ko-MvA">
+            <objects>
+                <viewController id="kI6-w5-uyG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxP-tB-M9y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tu-LO-04Z">
+                                <rect key="frame" x="40" y="84" width="21" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="우에엥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-pN-iNR">
+                                <rect key="frame" x="101" y="84" width="129" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어쩌라구요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuh-6L-vfq">
+                                <rect key="frame" x="270" y="84" width="104" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="76L-eB-ZO6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7tu-LO-04Z" firstAttribute="top" secondItem="76L-eB-ZO6" secondAttribute="top" constant="40" id="2yC-Bf-7Iw"/>
+                            <constraint firstItem="76L-eB-ZO6" firstAttribute="trailing" secondItem="tuh-6L-vfq" secondAttribute="trailing" constant="40" id="4bT-Bf-0zw"/>
+                            <constraint firstItem="Kfm-pN-iNR" firstAttribute="leading" secondItem="7tu-LO-04Z" secondAttribute="trailing" constant="40" id="QJe-kN-ShR"/>
+                            <constraint firstItem="tuh-6L-vfq" firstAttribute="leading" secondItem="Kfm-pN-iNR" secondAttribute="trailing" constant="40" id="XhP-3y-aw1"/>
+                            <constraint firstItem="Kfm-pN-iNR" firstAttribute="top" secondItem="7tu-LO-04Z" secondAttribute="top" id="jfZ-vx-ov8"/>
+                            <constraint firstItem="7tu-LO-04Z" firstAttribute="leading" secondItem="76L-eB-ZO6" secondAttribute="leading" constant="40" id="plq-AY-h2n"/>
+                            <constraint firstItem="tuh-6L-vfq" firstAttribute="top" secondItem="Kfm-pN-iNR" secondAttribute="top" id="uAz-ME-5TL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZd-g2-njq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8695652173915" y="22.767857142857142"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
