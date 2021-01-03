@@ -60,7 +60,6 @@
 				AB07CE5925A1728A0075B1AB /* Resource */,
 				AB07CE18259D097B0075B1AB /* AppDelegate.swift */,
 				AB07CE1A259D097B0075B1AB /* SceneDelegate.swift */,
-				AB07CE21259D097C0075B1AB /* Assets.xcassets */,
 				AB07CE26259D097C0075B1AB /* Info.plist */,
 			);
 			path = "autolayout-prac";
@@ -69,6 +68,7 @@
 		AB07CE5925A1728A0075B1AB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AB07CE21259D097C0075B1AB /* Assets.xcassets */,
 				AB07CE5B25A1729A0075B1AB /* Storyboard */,
 			);
 			path = Resource;
