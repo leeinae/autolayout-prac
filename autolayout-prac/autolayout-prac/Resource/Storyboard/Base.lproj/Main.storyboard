@@ -187,6 +187,54 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-ax-V1j" userLabel="Red View">
+                                <rect key="frame" x="10" y="256.66666666666669" width="394" height="595.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4S-ev-leS" userLabel="Orange View">
+                                        <rect key="frame" x="15" y="15" width="364" height="565.33333333333337"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-1v-YNs">
+                                                <rect key="frame" x="30" y="374.33333333333331" width="326" height="182.99999999999994"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZ1-vq-lq2">
+                                                <rect key="frame" x="30" y="8" width="326" height="183"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFn-CD-XrN">
+                                                <rect key="frame" x="30" y="191" width="326" height="183.33333333333337"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstItem="HFn-CD-XrN" firstAttribute="height" secondItem="gZ1-vq-lq2" secondAttribute="height" id="69a-ex-7qT"/>
+                                            <constraint firstItem="sAd-1v-YNs" firstAttribute="top" secondItem="HFn-CD-XrN" secondAttribute="bottom" id="AmO-ch-Fil"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="gZ1-vq-lq2" secondAttribute="trailing" id="CQp-Mz-ZrZ"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="sAd-1v-YNs" secondAttribute="trailing" id="EYI-59-2NW"/>
+                                            <constraint firstItem="gZ1-vq-lq2" firstAttribute="leading" secondItem="g4S-ev-leS" secondAttribute="leadingMargin" id="KWd-FR-uN9"/>
+                                            <constraint firstItem="sAd-1v-YNs" firstAttribute="width" secondItem="gZ1-vq-lq2" secondAttribute="width" id="O52-Tp-5Ql"/>
+                                            <constraint firstItem="HFn-CD-XrN" firstAttribute="width" secondItem="gZ1-vq-lq2" secondAttribute="width" id="U6h-uD-apL"/>
+                                            <constraint firstItem="sAd-1v-YNs" firstAttribute="leading" secondItem="g4S-ev-leS" secondAttribute="leadingMargin" id="XLC-2A-FLG"/>
+                                            <constraint firstItem="gZ1-vq-lq2" firstAttribute="top" secondItem="g4S-ev-leS" secondAttribute="topMargin" id="Ya5-fd-ze6"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="sAd-1v-YNs" secondAttribute="bottom" id="kDf-Li-xGi"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="HFn-CD-XrN" secondAttribute="trailing" id="kzQ-gj-qbc"/>
+                                            <constraint firstItem="HFn-CD-XrN" firstAttribute="leading" secondItem="g4S-ev-leS" secondAttribute="leadingMargin" id="pNz-eJ-kh9"/>
+                                            <constraint firstItem="HFn-CD-XrN" firstAttribute="top" secondItem="gZ1-vq-lq2" secondAttribute="bottom" id="xnz-33-WLr"/>
+                                            <constraint firstItem="sAd-1v-YNs" firstAttribute="height" secondItem="gZ1-vq-lq2" secondAttribute="height" id="zjJ-Xc-94f"/>
+                                        </constraints>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="30" bottom="8" trailing="8"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="g4S-ev-leS" secondAttribute="trailing" id="Dt4-n2-6vD"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="g4S-ev-leS" secondAttribute="bottom" id="TdD-z4-F6o"/>
+                                    <constraint firstItem="g4S-ev-leS" firstAttribute="top" secondItem="kpE-ax-V1j" secondAttribute="topMargin" id="kKu-vm-qiA"/>
+                                    <constraint firstItem="g4S-ev-leS" firstAttribute="leading" secondItem="kpE-ax-V1j" secondAttribute="leadingMargin" id="qcz-A5-itT"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="15" leading="15" bottom="15" trailing="15"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="76L-eB-ZO6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -196,8 +244,12 @@
                             <constraint firstItem="ATN-ce-WJJ" firstAttribute="top" secondItem="zTb-FB-w3g" secondAttribute="top" id="Ggv-4h-YhD"/>
                             <constraint firstItem="Kfm-pN-iNR" firstAttribute="leading" secondItem="7tu-LO-04Z" secondAttribute="trailing" constant="40" id="QJe-kN-ShR"/>
                             <constraint firstItem="tuh-6L-vfq" firstAttribute="leading" secondItem="Kfm-pN-iNR" secondAttribute="trailing" constant="40" id="XhP-3y-aw1"/>
+                            <constraint firstItem="kpE-ax-V1j" firstAttribute="leading" secondItem="76L-eB-ZO6" secondAttribute="leading" constant="10" id="cLS-yf-adO"/>
+                            <constraint firstItem="76L-eB-ZO6" firstAttribute="bottom" secondItem="kpE-ax-V1j" secondAttribute="bottom" constant="10" id="g23-zg-g8L"/>
+                            <constraint firstItem="kpE-ax-V1j" firstAttribute="top" secondItem="zTb-FB-w3g" secondAttribute="bottom" constant="10" id="h8M-FO-mCz"/>
                             <constraint firstItem="zTb-FB-w3g" firstAttribute="leading" secondItem="7tu-LO-04Z" secondAttribute="leading" id="i4f-pb-IJH"/>
                             <constraint firstItem="Kfm-pN-iNR" firstAttribute="top" secondItem="7tu-LO-04Z" secondAttribute="top" id="jfZ-vx-ov8"/>
+                            <constraint firstItem="76L-eB-ZO6" firstAttribute="trailing" secondItem="kpE-ax-V1j" secondAttribute="trailing" constant="10" id="k3w-Ep-0yk"/>
                             <constraint firstItem="ATN-ce-WJJ" firstAttribute="trailing" secondItem="tuh-6L-vfq" secondAttribute="trailing" id="mTq-BJ-H56"/>
                             <constraint firstItem="7tu-LO-04Z" firstAttribute="leading" secondItem="76L-eB-ZO6" secondAttribute="leading" constant="40" id="plq-AY-h2n"/>
                             <constraint firstItem="zTb-FB-w3g" firstAttribute="top" secondItem="7tu-LO-04Z" secondAttribute="bottom" constant="100" id="tWJ-fi-lHZ"/>
@@ -215,6 +267,12 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -223,6 +281,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
