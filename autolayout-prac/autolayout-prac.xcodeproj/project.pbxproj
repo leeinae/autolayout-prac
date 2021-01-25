@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		AB07CE19259D097B0075B1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07CE18259D097B0075B1AB /* AppDelegate.swift */; };
 		AB07CE1B259D097B0075B1AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07CE1A259D097B0075B1AB /* SceneDelegate.swift */; };
-		AB07CE1D259D097B0075B1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07CE1C259D097B0075B1AB /* ViewController.swift */; };
+		AB07CE1D259D097B0075B1AB /* KeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07CE1C259D097B0075B1AB /* KeyboardVC.swift */; };
 		AB07CE20259D097B0075B1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB07CE1E259D097B0075B1AB /* Main.storyboard */; };
 		AB07CE22259D097C0075B1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB07CE21259D097C0075B1AB /* Assets.xcassets */; };
 		AB07CE25259D097C0075B1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB07CE23259D097C0075B1AB /* LaunchScreen.storyboard */; };
 		AB07CE6025A1AB4F0075B1AB /* Cert_BG.PNG in Resources */ = {isa = PBXBuildFile; fileRef = AB07CE5F25A1AB4F0075B1AB /* Cert_BG.PNG */; };
+		AB3CDE2025BF2A5300F6B1CC /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3CDE1F25BF2A5300F6B1CC /* Keyboard.storyboard */; };
+		AB3CDE2425BF2A8000F6B1CC /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3CDE2325BF2A8000F6B1CC /* CustomKeyboard.xib */; };
+		AB3CDE2A25BF2ACE00F6B1CC /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CDE2925BF2ACE00F6B1CC /* CustomKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB07CE15259D097B0075B1AB /* autolayout-prac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "autolayout-prac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB07CE18259D097B0075B1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB07CE1A259D097B0075B1AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB07CE1C259D097B0075B1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB07CE1C259D097B0075B1AB /* KeyboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVC.swift; sourceTree = "<group>"; };
 		AB07CE1F259D097B0075B1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB07CE21259D097C0075B1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB07CE24259D097C0075B1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB07CE26259D097C0075B1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB07CE5F25A1AB4F0075B1AB /* Cert_BG.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cert_BG.PNG; path = "../../../../Downloads/Lecture Image Resource/Cert_BG.PNG"; sourceTree = "<group>"; };
+		AB3CDE1F25BF2A5300F6B1CC /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
+		AB3CDE2325BF2A8000F6B1CC /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
+		AB3CDE2925BF2ACE00F6B1CC /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		AB07CE5A25A172910075B1AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AB3CDE2225BF2A6900F6B1CC /* Xibs */,
 				AB07CE5D25A172A90075B1AB /* Cells */,
 				AB07CE5C25A172A40075B1AB /* VCs */,
 			);
@@ -91,6 +98,7 @@
 			children = (
 				AB07CE23259D097C0075B1AB /* LaunchScreen.storyboard */,
 				AB07CE1E259D097B0075B1AB /* Main.storyboard */,
+				AB3CDE1F25BF2A5300F6B1CC /* Keyboard.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -98,7 +106,7 @@
 		AB07CE5C25A172A40075B1AB /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				AB07CE1C259D097B0075B1AB /* ViewController.swift */,
+				AB07CE1C259D097B0075B1AB /* KeyboardVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -108,6 +116,15 @@
 			children = (
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB3CDE2225BF2A6900F6B1CC /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CDE2325BF2A8000F6B1CC /* CustomKeyboard.xib */,
+				AB3CDE2925BF2ACE00F6B1CC /* CustomKeyboard.swift */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +186,10 @@
 			files = (
 				AB07CE6025A1AB4F0075B1AB /* Cert_BG.PNG in Resources */,
 				AB07CE25259D097C0075B1AB /* LaunchScreen.storyboard in Resources */,
+				AB3CDE2025BF2A5300F6B1CC /* Keyboard.storyboard in Resources */,
 				AB07CE22259D097C0075B1AB /* Assets.xcassets in Resources */,
 				AB07CE20259D097B0075B1AB /* Main.storyboard in Resources */,
+				AB3CDE2425BF2A8000F6B1CC /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,9 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB07CE1D259D097B0075B1AB /* ViewController.swift in Sources */,
+				AB07CE1D259D097B0075B1AB /* KeyboardVC.swift in Sources */,
 				AB07CE19259D097B0075B1AB /* AppDelegate.swift in Sources */,
 				AB07CE1B259D097B0075B1AB /* SceneDelegate.swift in Sources */,
+				AB3CDE2A25BF2ACE00F6B1CC /* CustomKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
