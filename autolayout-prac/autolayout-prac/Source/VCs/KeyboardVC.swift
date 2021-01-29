@@ -31,7 +31,9 @@ extension KeyboardVC: CustomkeyboardDelegate {
             newValue = num + str
 
             if str == "00" || str == "000" {
-                newValue = String(Int(num)! * Int("1" + str)!)
+                if let intNum = Int(num) {
+                    newValue = String(intNum * Int("1" + str)!)
+                }
             }
         }
 
