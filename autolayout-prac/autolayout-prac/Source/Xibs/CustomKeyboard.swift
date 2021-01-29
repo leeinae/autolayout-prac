@@ -7,14 +7,20 @@
 
 import UIKit
 
+protocol CustomkeyboardDelegate {
+    func pressNumberButton(str: String)
+}
+
 class CustomKeyboard: UIView {
+    // MARK: - Custom Variables
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var delegate: CustomkeyboardDelegate?
+
+    // MARK: - Custom Methods
+
+    @IBAction func touchUpButton(_ sender: UIButton) {
+        if let pressNumber = sender.titleLabel?.text {
+            delegate?.pressNumberButton(str: pressNumber)
+        }
     }
-    */
-
 }

@@ -15,7 +15,14 @@ class KeyboardVC: UIViewController {
 
         let loadXib = Bundle.main.loadNibNamed("CustomKeyboard", owner: self, options: nil)
         if let keyboard = loadXib?.first as? CustomKeyboard {
+            keyboard.delegate = self
             customTextField.inputView = keyboard
         }
+    }
+}
+
+extension KeyboardVC: CustomkeyboardDelegate {
+    func pressNumberButton(str: String) {
+        print("---\(str)")
     }
 }
