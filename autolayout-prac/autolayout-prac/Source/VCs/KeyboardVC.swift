@@ -23,15 +23,21 @@ class KeyboardVC: UIViewController {
 
 extension KeyboardVC: CustomkeyboardDelegate {
     func pressNumberButton(str: String) {
-        var newValue = str
+        var newValue: String = str
+        let numberFormatter = NumberFormatter()
 
-        if str == "00" || str == "000" {
-            if let existingValue = Int(customTextField.text!) {
-                customTextField.text = .init()
-                newValue = String(existingValue * Int("1" + str)!)
+        if let existingValue = customTextField.text {
+            let num = existingValue.components(separatedBy: [","]).joined()
+            newValue = num + str
+
+            if str == "00" || str == "000" {
+                newValue = String(Int(num)! * Int("1" + str)!)
             }
         }
 
-        customTextField.text! += newValue
+        numberFormatter.numberStyle = .decimal
+
+        customTextField.text = .init()
+        customTextField.text! += numberFormatter.string(for: Int(newValue))!
     }
 }
